@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/theme"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <Button
+            android:id="@id/back"
+            style="@style/back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="记账详情"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_font"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="20.0dip">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tag_selection_item_selected"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@id/tag_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5.0dip"
+                    android:src="@drawable/qit" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@id/tag_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dip"
+                android:text="生活"
+                android:textColor="@color/theme"
+                android:textSize="@dimen/large_2_font" />
+
+            <TextView
+                android:id="@id/tag_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生活开支等"
+                android:textColor="@color/black_trans"
+                android:textSize="@dimen/normal_font"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@id/amount_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30.0dip"
+                android:drawableLeft="@drawable/income_icon"
+                android:drawablePadding="5.0dip"
+                android:text="收入300.00元"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_1_font" />
+
+            <TextView
+                android:id="@id/datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:text="2014年03月30日 19:09"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_font" />
+
+            <View
+                style="@style/hLine"
+                android:layout_marginBottom="20.0dip"
+                android:layout_marginLeft="25.0dip"
+                android:layout_marginRight="25.0dip"
+                android:layout_marginTop="36.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip">
+
+                <TextView
+                    android:id="@id/comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:text="了敬爱颠覆了卡机大师傅拉时间打发拉屎的咖啡机阿斯兰的咖啡机艾斯黛拉咖啡机ADSL咖啡机"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_1_font" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View style="@style/hLine" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/option_bg"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@id/delete"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_bg_selector"
+            android:text="删 除"
+            android:textColor="@drawable/btn_warn_text_selector"
+            android:textSize="@dimen/option_font" />
+
+        <View
+            style="@style/vLine"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip" />
+
+        <Button
+            android:id="@id/edit"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_bg_selector"
+            android:text="编 辑"
+            android:textColor="@drawable/btn_text_selector"
+            android:textSize="@dimen/option_font"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

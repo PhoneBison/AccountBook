@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme">#ff71cf97</color>
+    <color name="theme_deep">#ff57a575</color>
+    <color name="theme_trans">#ffe6f6ec</color>
+    <color name="window_bg">#ffffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ffcc0000</color>
+    <color name="trans">#00ffffff</color>
+    <color name="white_trans">#88ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_eighty_trans">#cc000000</color>
+    <color name="black_trans">#ff777777</color>
+    <color name="nav_fg">#ff7f7f7f</color>
+    <color name="hint">#ffc6ced8</color>
+    <color name="text_bg">#ffdcdcdc</color>
+    <color name="normal">#ff888888</color>
+    <color name="income">#ff0c63d4</color>
+    <color name="expand">#fffc1532</color>
+    <color name="surplus">#ff29662c</color>
+    <color name="income_trans">#880c63d4</color>
+    <color name="expand_trans">#88fc1532</color>
+    <color name="surplus_trans">#8829662c</color>
+    <color name="holo_green_dark">#795548</color>
+    <color name="colorPrimary">#795548</color>
+    <color name="colorPrimaryDark">#d7d7d7</color>
+    <color name="colorAccent">#060204</color>
+    <color  name="indicatorcolor">#FF0084FF</color>
+
+    <color name="gesture_background">#ff303237</color>
+    <!--<color name="color_hei_8">#00000000</color>-->
+    <!--<drawable name="trans">@color/color_hei_8</drawable>-->
+</resources>

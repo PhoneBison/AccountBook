@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_item_template_bg"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5.0dip"
+        android:src="@drawable/xuex" />
+
+    <View
+        style="@style/vLine"
+        android:layout_marginBottom="15.0dip"
+        android:layout_marginTop="15.0dip" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:text="学习"
+        android:textColor="@color/black"
+        android:textSize="@dimen/large_1_font" />
+
+    <TextView
+        android:id="@+id/manger_comment"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_weight="1.0"
+        android:text="文具，资料等"
+        android:textColor="@color/black_trans"
+        android:textSize="@dimen/normal_font" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10.0dip"
+        android:src="@drawable/arrow_right_selector" />
+</LinearLayout>

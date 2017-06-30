@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="title_height">50.0dip</dimen>
+    <dimen name="title_font">18.0dip</dimen>
+    <dimen name="tab_title_font">15.0dip</dimen>
+    <dimen name="normal_font">14.0dip</dimen>
+    <dimen name="option_font">16.0dip</dimen>
+    <dimen name="form_height">50.0dip</dimen>
+    <dimen name="form_extra_height">60.0dip</dimen>
+    <dimen name="small_1_font">12.0dip</dimen>
+    <dimen name="large_font">15.0dip</dimen>
+    <dimen name="large_1_font">16.0dip</dimen>
+    <dimen name="large_2_font">18.0dip</dimen>
+    <dimen name="large_3_font">20.0dip</dimen>
+    <dimen name="large_4_font">22.0dip</dimen>
+    <dimen name="large_5_font">24.0dip</dimen>
+    <dimen name="large_6_font">26.0dip</dimen>
+    <dimen name="large_100_font">100.0dip</dimen>
+    <dimen name="report_bar_height">12.0dip</dimen>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="trans">#00ffffff</item>
+    <item type="drawable" name="option_bg">#88dcdcdc</item>
+    <item type="drawable" name="theme">#ff71cf97</item>
+    <item type="drawable" name="theme_trans">#8871cf97</item>
+    <item type="drawable" name="theme_press">#ff41a76b</item>
+    <item type="drawable" name="clickable_normal">#ffffffff</item>
+    <item type="drawable" name="clickable_press">#fff2f3f4</item>
+    <item type="drawable" name="tab_background">#fff1f1f1</item>
+</resources>

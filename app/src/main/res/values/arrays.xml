@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_names">
+        <item>记一笔</item>
+        <item>账簿</item>
+        <item>标签</item>
+        <item>更多</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/theme"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <Button
+            android:id="@+id/back"
+            style="@style/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加标签"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_font"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip">
+
+        <LinearLayout
+            android:id="@+id/type"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/form_height"
+            android:layout_marginTop="6.0dip"
+            android:background="@drawable/form_option_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:text="类别"
+                android:textColor="@color/normal"
+                android:textSize="@dimen/normal_font" />
+
+            <TextView
+                android:id="@+id/type_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:background="@null"
+                android:text="支出"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_font" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/form_height"
+            android:background="@drawable/form_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:text="名称"
+                android:textColor="@color/normal"
+                android:textSize="@dimen/normal_font" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:background="@null"
+                android:hint="给标签取个有代表性的名称"
+                android:singleLine="true"
+                android:textColorHint="@color/hint"
+                android:textSize="@dimen/normal_font"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/form_height"
+            android:background="@drawable/form_h_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:text="备注"
+                android:textColor="@color/normal"
+                android:textSize="@dimen/normal_font" />
+
+            <EditText
+                android:id="@+id/manger_add_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:background="@null"
+                android:hint="可以备注一下，提醒、自律、备忘、类别..."
+                android:singleLine="true"
+                android:textColorHint="@color/hint"
+                android:textSize="@dimen/normal_font"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridView
+                android:id="@+id/grid_tags"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/white"
+                android:cacheColorHint="#00000000"
+                android:clickable="true"
+                android:clipChildren="true"
+                android:columnWidth="1000.0dip"
+                android:listSelector="@color/trans"
+                android:numColumns="5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/option_bg"
+        android:orientation="vertical">
+
+        <View style="@style/hLine" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg_selector"
+            android:text="完成"
+            android:textColor="@drawable/btn_text_selector"
+            android:textSize="@dimen/option_font" />
+    </LinearLayout>
+</LinearLayout>

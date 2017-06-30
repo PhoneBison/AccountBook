@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/theme"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <Button
+            android:id="@id/back"
+            style="@style/back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="数据导出"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_font"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10.0dip">
+
+            <View
+                style="@style/hhLine"
+                android:layout_marginTop="10.0dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/export"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="@drawable/form_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.0dip"
+                android:text="导出数据到SD卡"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_1_font" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:lineSpacingExtra="3.0dip"
+                android:text="1.导出现有的数据。\n2.以.db格式保存。\n3.自动存放到外部存储（一般为SD卡）的根目录下。\n4.文件名为 [Account-当前时间.db] 。\n5.您可以通过电脑查看该文件。\n6.您可以将该文件转移到别的手机下，完成导入您的数据"
+                android:textColor="@color/normal"
+                android:textSize="@dimen/normal_font" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

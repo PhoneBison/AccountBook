@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stu.it.accountbook">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name=".activity.MyApp"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity"></activity>
+
+        <!--手势解锁Activity-->
+        <activity
+            android:name=".activity.UnlockGesturePasswordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.CreateGesturePasswordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.GuideGesturePasswordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.AboutActivity"></activity>
+        <activity android:name=".activity.ImportAndExportActivity"></activity>
+        <activity android:name=".activity.DateActivity"></activity>
+        <activity android:name=".activity.TimeActivity"></activity>
+        <activity android:name=".activity.TagAddActivity"></activity>
+        <activity android:name=".activity.TagDetailActivity"></activity>
+        <activity android:name=".activity.RecordDetailActivity"></activity>
+        <activity android:name=".activity.UpdateRecordActivity"></activity>
+    </application>
+
+    //SD卡权限
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    //允许程序打开网络套接字
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+</manifest>
